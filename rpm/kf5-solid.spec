@@ -16,6 +16,7 @@ License:    GPLv2+
 URL:        http://www.kde.org
 Source0:    %{name}-%{version}.tar.xz
 Source100:  kf5-solid.yaml
+Source101:  kf5-solid-rpmlintrc
 Requires:   kf5-filesystem
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5DBus)

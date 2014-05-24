@@ -19,6 +19,10 @@ Provides:
     - kf5-solid-runtime = %{version}-%{release}
     - kf5-solid-runtime%{?_isa} = %{version}-%{release}
 
+RpmLintIgnore:
+    - devel-file-in-non-devel-package
+    - no-changelogname-tag
+
 Configure    : none
 Builder      : none
 
