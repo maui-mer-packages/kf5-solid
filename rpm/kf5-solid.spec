@@ -26,6 +26,8 @@ BuildRequires:  pkgconfig(Qt5Gui)
 BuildRequires:  pkgconfig(Qt5Widgets)
 BuildRequires:  pkgconfig(Qt5Concurrent)
 BuildRequires:  pkgconfig(Qt5Test)
+BuildRequires:  pkgconfig(Qt5Qml)
+BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(systemd)
 BuildRequires:  kf5-rpm-macros
 BuildRequires:  libupnp-devel

@@ -45,6 +45,8 @@ PkgConfigBR:
     - Qt5Widgets
     - Qt5Concurrent
     - Qt5Test
+    - Qt5Qml
+    - Qt5Quick
     - systemd
 Requires:
     - kf5-filesystem
