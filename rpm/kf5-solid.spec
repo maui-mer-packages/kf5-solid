@@ -76,7 +76,7 @@ rm -rf %{buildroot}
 
 # >> install post
 %kf5_make_install
-%find_lang solid5_qt --with-qt --all-name
+%find_lang solid5_qt --with-qt --all-name || :
 # << install post
 
 %files -f solid5_qt.lang
