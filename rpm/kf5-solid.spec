@@ -18,6 +18,10 @@ Source0:    %{name}-%{version}.tar.xz
 Source100:  kf5-solid.yaml
 Requires:   kf5-filesystem
 BuildRequires:  pkgconfig(Qt5Core)
+BuildRequires:  pkgconfig(Qt5DBus)
+BuildRequires:  pkgconfig(Qt5Xml)
+BuildRequires:  pkgconfig(Qt5Network)
+BuildRequires:  pkgconfig(Qt5Widgets)
 BuildRequires:  pkgconfig(systemd)
 BuildRequires:  kf5-rpm-macros
 BuildRequires:  libupnp-devel
