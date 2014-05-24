@@ -21,12 +21,17 @@ BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5DBus)
 BuildRequires:  pkgconfig(Qt5Xml)
 BuildRequires:  pkgconfig(Qt5Network)
+BuildRequires:  pkgconfig(Qt5Gui)
 BuildRequires:  pkgconfig(Qt5Widgets)
+BuildRequires:  pkgconfig(Qt5Concurrent)
 BuildRequires:  pkgconfig(systemd)
 BuildRequires:  kf5-rpm-macros
 BuildRequires:  libupnp-devel
 BuildRequires:  extra-cmake-modules
 BuildRequires:  qt5-tools
+BuildRequires:  flex
+BuildRequires:  bison-devel
+BuildRequires:  media-player-info
 Provides:   kf5-solid-runtime = %{version}-%{release}
 Provides:   kf5-solid-runtime%{?_isa} = %{version}-%{release}
 

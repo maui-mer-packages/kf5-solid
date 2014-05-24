@@ -27,12 +27,17 @@ PkgBR:
     - libupnp-devel
     - extra-cmake-modules
     - qt5-tools
+    - flex
+    - bison-devel
+    - media-player-info
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus
     - Qt5Xml
     - Qt5Network
+    - Qt5Gui
     - Qt5Widgets
+    - Qt5Concurrent
     - systemd
 Requires:
     - kf5-filesystem
