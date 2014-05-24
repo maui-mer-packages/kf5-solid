@@ -1,0 +1,55 @@
+Name         : kf5-solid
+Version      : 4.99.0
+Release      : 1
+Group        : System/Base
+License      : GPLv2+
+Summary      : KDE Frameworks 5 Tier 1 integration module that provides hardware information
+Description  : |
+  Solid provides the following features for application developers:
+   - Hardware Discovery
+   - Power Management
+   - Network Management
+URL          : http://www.kde.org
+SetupOptions : -q -n %{name}-%{version}/upstream
+
+Sources:
+    - "%{name}-%{version}.tar.xz"
+
+Provides:
+    - kf5-solid-runtime = %{version}-%{release}
+    - kf5-solid-runtime%{?_isa} = %{version}-%{release}
+
+Configure    : none
+Builder      : none
+
+PkgBR:
+    - kf5-rpm-macros
+    - libupnp-devel
+    - extra-cmake-modules
+    - qt5-tools
+PkgConfigBR:
+    - Qt5Core
+    - systemd
+Requires:
+    - kf5-filesystem
+
+Files:
+    - "%doc COPYING.LIB README.md TODO"
+    - "%{_kf5_qmldir}/org/kde/solid"
+    - "%{_kf5_libdir}/libKF5Solid.so.*"
+    - "%{_kf5_bindir}/solid-hardware5"
+FilesInput: solid5_qt.lang
+
+SubPackages:
+    - Name: devel
+      Group: Development/Libraries
+      Summary: Development files for %{name}
+      Description: |
+        The %{name}-devel package contains the files necessary to develop applications |
+        that use %{name}.
+      Files:
+          - "%{_kf5_includedir}/solid_version.h"
+          - "%{_kf5_includedir}/Solid"
+          - "%{_kf5_libdir}/libKF5Solid.so"
+          - "%{_kf5_libdir}/cmake/KF5Solid"
+          - "%{_kf5_archdatadir}/mkspecs/modules/qt_Solid.pri"
