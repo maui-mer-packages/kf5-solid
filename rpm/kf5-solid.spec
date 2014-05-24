@@ -94,6 +94,6 @@ rm -rf %{buildroot}
 %{_kf5_includedir}/Solid
 %{_kf5_libdir}/libKF5Solid.so
 %{_kf5_libdir}/cmake/KF5Solid
-%{_kf5_archdatadir}/mkspecs/modules/qt_Solid.pri
+%{_datadir}/mkspecs/modules/qt_Solid.pri
 # >> files devel
 # << files devel
