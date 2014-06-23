@@ -36,6 +36,7 @@ PkgBR:
     - flex
     - bison-devel
     - media-player-info
+    - libudisks2-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus
@@ -50,6 +51,7 @@ PkgConfigBR:
     - systemd
 Requires:
     - kf5-filesystem
+    - udisks2
 
 Files:
     - "%doc COPYING.LIB README.md TODO"

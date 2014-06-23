@@ -18,6 +18,7 @@ Source0:    %{name}-%{version}.tar.xz
 Source100:  kf5-solid.yaml
 Source101:  kf5-solid-rpmlintrc
 Requires:   kf5-filesystem
+Requires:   udisks2
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5DBus)
 BuildRequires:  pkgconfig(Qt5Xml)
@@ -36,6 +37,7 @@ BuildRequires:  qt5-tools
 BuildRequires:  flex
 BuildRequires:  bison-devel
 BuildRequires:  media-player-info
+BuildRequires:  libudisks2-devel
 Provides:   kf5-solid-runtime = %{version}-%{release}
 Provides:   kf5-solid-runtime%{?_isa} = %{version}-%{release}
 
