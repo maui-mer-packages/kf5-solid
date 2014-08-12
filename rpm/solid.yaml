@@ -1,5 +1,5 @@
-Name         : kf5-solid
-Version      : 5.0.0
+Name         : solid
+Version      : 5.1.0
 Release      : 1
 Group        : System/Base
 License      : GPLv2+
@@ -16,8 +16,8 @@ Sources:
     - "%{name}-%{version}.tar.xz"
 
 Provides:
-    - kf5-solid-runtime = %{version}-%{release}
-    - kf5-solid-runtime%{?_isa} = %{version}-%{release}
+    - solid-runtime = %{version}-%{release}
+    - solid-runtime%{?_isa} = %{version}-%{release}
 
 RpmLintIgnore:
     - devel-file-in-non-devel-package
@@ -65,11 +65,11 @@ SubPackages:
       Group: Development/Libraries
       Summary: Development files for %{name}
       Description: |
-        The %{name}-devel package contains the files necessary to develop applications |
+        The %{name}-devel package contains the files necessary to develop applications
         that use %{name}.
       Files:
           - "%{_kf5_includedir}/solid_version.h"
           - "%{_kf5_includedir}/Solid"
           - "%{_kf5_libdir}/libKF5Solid.so"
-          - "%{_kf5_libdir}/cmake/KF5Solid"
-          - "%{_datadir}/qt5/mkspecs/modules/qt_Solid.pri"
+          - "%{_kf5_cmakedir}/KF5Solid"
+          - "%{_kf5_mkspecsdir}/qt_Solid.pri"
