@@ -1,6 +1,6 @@
 Name         : solid
 Version      : 5.3.0
-Release      : 1
+Release      : 2
 Group        : System/Base
 License      : GPLv2+
 Summary      : KDE Frameworks 5 Tier 1 integration module that provides hardware information
@@ -32,6 +32,7 @@ PkgBR:
     - libupnp-devel
     - extra-cmake-modules
     - qt5-tools
+    - qt5-qttools-linguist
     - flex
     - bison-devel
     - media-player-info

@@ -10,7 +10,7 @@ Name:       solid
 
 Summary:    KDE Frameworks 5 Tier 1 integration module that provides hardware information
 Version:    5.3.0
-Release:    1
+Release:    2
 Group:      System/Base
 License:    GPLv2+
 URL:        http://www.kde.org
@@ -34,6 +34,7 @@ BuildRequires:  kf5-rpm-macros
 BuildRequires:  libupnp-devel
 BuildRequires:  extra-cmake-modules
 BuildRequires:  qt5-tools
+BuildRequires:  qt5-qttools-linguist
 BuildRequires:  flex
 BuildRequires:  bison-devel
 BuildRequires:  media-player-info
